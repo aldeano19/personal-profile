@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  get "/" => "pages#welcome"
+  get "/" => "pages#profile"
+
+  get "books" => "book#list"
 end

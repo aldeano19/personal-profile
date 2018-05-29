@@ -1,0 +1,56 @@
+<section class="o-section  t-section  ">
+
+  <div class="o-section__header-bg  t-section__header"></div>
+  <div class="o-section__content-bg  t-section__content"></div>
+
+  <div class="o-container">
+    <div class="o-section__container">
+
+      <header class="o-section__header  t-section__header">
+        <div class="o-content">
+          <h2 class="o-section__heading">
+            Portfolio
+          </h2>
+          <div class="o-content__body  o-section__description">
+            Here it gets interesting.
+          </div>
+        </div>
+      </header><!-- /o-section__header -->
+
+      <div class="o-section__content  t-section__content  o-section__full-bottom-space">
+
+        <div class="o-grid  o-grid--gallery">
+
+          <% @portfolio.each do |element| %>
+
+            <div class="o-grid__col-sm-6">
+              <%= link_to "portfolio/#{element[:full_img]}",
+                          class: "c-image-overlay  t-image-overlay  js-lightbox",
+                          title: element[:title],
+                          'data-lightbox-hidpi'.to_sym => '',
+                          'data-lightbox-gallery'.to_sym => 'portfolio' do %>
+                <%= image_tag  "portfolio/#{element[:thumb_img]}"%>
+
+                <div class="c-image-overlay__content">
+                  <h3>
+                    <%= element[:title] %>
+                  </h3>
+                  <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line"/>
+                  <p>
+                    <%= element[:description] %>
+                  </p>
+                </div>
+
+              <% end %>
+            </div><!-- /o-grid__col -->
+
+          <% end %>
+
+        </div><!-- /o-grid -->
+
+      </div><!-- /o-section__content -->
+
+    </div><!-- /o-section__container -->
+  </div><!-- /o-container -->
+
+</section><!-- /o-section -->

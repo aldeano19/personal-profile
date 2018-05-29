@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PersonalProfile</title>
+    <title>Developer Profile</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Google Font: Lato -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- FontAwesome -->
+    <%= stylesheet_link_tag "font-awesome/css/font-awesome.min.css" %>
+
+    <!-- Nivo Lightbox-->
+    <%= stylesheet_link_tag "nivo-lightbox/nivo-lightbox.css" %>
+    <%= stylesheet_link_tag "nivo-lightbox/themes/default/default.css" %>
+
+    <!-- Main CSS -->
+    <%= stylesheet_link_tag "main" %>
+
+    <!-- Themes -->
+    <%#= stylesheet_link_tag "themes.light.css" %>
+    <%= stylesheet_link_tag "themes.dark.css" %>
+
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="assets/css/custom.css">-->
+
+    <!-- jQuery -->
+    <%= javascript_include_tag "jquery.min.js" %>
+
+    <!-- dense.js (Retina plugin) -->
+    <%= javascript_include_tag "dense.js" %>
+
+    <!-- Nivo Lightbox -->
+    <%= javascript_include_tag "nivo-lightbox/nivo-lightbox.min.js" %>
+
+    <!-- ScrollReveal -->
+    <%= javascript_include_tag "scrollreveal.min.js" %>
+
+    <!-- Main JS -->
+    <%= javascript_include_tag "main.js" %>
   </head>
 
   <body>

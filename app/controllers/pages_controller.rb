@@ -1,6 +1,15 @@
 class PagesController < ApplicationController
-  def welcome
-    @personal_intoduction = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.'
+  def profile
+    @first_name = 'Eriel'
+    @last_name = 'Marimon'
+    @what_i_do = 'Full Stack Developer'
+
+    @personal_intoduction = ''
+
+    @accounts = [
+        {link: "https://example.com", fa_icon: "fa-facebook"},
+        {link: "https://example.com", fa_icon: "fa-google-plus"}
+    ]
 
     @expertise = [
         {name: 'Java Spring Framework', description: 'Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'},
@@ -121,6 +130,7 @@ class PagesController < ApplicationController
                 { name: 'youtube', image: 'youtube.png', link: 'example.com' },
                 { name: 'vimeo', image: 'vimeo.png', link: 'example.com' }]
 
-    render('pages/welcome')
+    render('pages/profile')
   end
+
 end

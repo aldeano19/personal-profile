@@ -1,0 +1,50 @@
+<section class="o-section  t-section  ">
+
+  <div class="o-section__header-bg  t-section__header"></div>
+  <div class="o-section__content-bg  t-section__content"></div>
+
+  <div class="o-container">
+    <div class="o-section__container">
+
+      <header class="o-section__header  t-section__header">
+        <div class="o-content">
+          <h2 class="o-section__heading">
+            Expertise
+          </h2>
+          <div class="o-content__body  o-section__description">
+            Batman would be jealous.
+          </div>
+        </div>
+      </header><!-- /o-section__header -->
+
+      <div class="o-section__content  t-section__content  ">
+
+        <div class="o-grid">
+
+          <% @expertise.each_with_index do |element, index| %>
+            <div class="o-grid__col-sm-6">
+              <div class="o-media  o-media--block  o-content">
+                <div class="o-media__figure">
+                  <div class="c-number  t-primary-color">
+                    <%= index + 1 < 10 ? "0#{index + 1}" : index + 1 %>
+                  </div>
+                </div>
+                <div class="o-media__body  o-content__body">
+                  <h3><%= element[:name] %></h3>
+                  <p>
+                    <%= element[:description] %>
+                  </p>
+                </div>
+              </div><!-- /o-media o-content -->
+            </div><!-- /o-grid__col -->
+          <% end %>
+
+
+        </div><!-- /o-grid -->
+
+      </div><!-- /o-section__content -->
+
+    </div><!-- /o-section__container -->
+  </div><!-- /o-container -->
+
+</section><!-- /o-section -->

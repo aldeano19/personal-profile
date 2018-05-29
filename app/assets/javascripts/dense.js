@@ -312,7 +312,7 @@
     };
 
     /**
-     * Gets an appropriate URL for the pixel ratio from the data attribute list.
+     * Gets an appropriate URL for the pixel ratio from the data attribute lllist.
      *
      * Selects the most appropriate <code>data-{ratio}x</code> attribute from
      * the given element's attributes. If the devices pixel ratio is greater
