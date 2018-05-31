@@ -8,7 +8,7 @@
       <div class="o-content__body">
         <h4>Location</h4>
         <address>
-          Portland, OR
+          <%= @contact_info[:where] %>
         </address>
       </div>
     </div><!-- /o-content -->
@@ -19,7 +19,7 @@
       <div class="o-content__body">
         <h4>Phone</h4>
         <p>
-          534.456.886
+          <%= @contact_info[:mobile] %>
         </p>
       </div>
     </div><!-- /o-content -->
@@ -28,12 +28,12 @@
   <div class="o-grid__col-md-3  o-grid__col-sm-6">
     <div class="a-header  o-content">
       <div class="o-content__body">
-        <a href="#" target="_blank" class="t-link-container">
+        <a href="http://<%= @contact_info[:website] %>" target="_blank" class="t-link-container">
           <h4>Web</h4>
           <p>
-                                                                <span class="t-link-container__item--blended">
-                                                                    ruventhemes.com
-                                                                </span>
+            <span class="t-link-container__item--blended">
+                <%= @contact_info[:website] %>
+            </span>
           </p>
         </a><!-- /o-link-container -->
       </div>
@@ -43,14 +43,12 @@
   <div class="o-grid__col-md-3  o-grid__col-sm-6">
     <div class="a-header  o-content">
       <div class="o-content__body">
-        <a href="#" target="_blank" class="t-link-container">
-          <h4>Email</h4>
-          <p>
-                                                                <span class="t-link-container__item--blended">
-                                                                    hello@example.com
-                                                                </span>
-          </p>
-        </a><!-- /o-link-container -->
+        <h4>Email</h4>
+        <p>
+          <span class="t-link-container__item--blended">
+              <%= @contact_info[:email] %>
+          </span>
+        </p>
       </div>
     </div><!-- /o-content -->
   </div><!-- /o-grid__col -->
