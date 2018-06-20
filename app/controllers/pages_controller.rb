@@ -7,7 +7,7 @@ class PagesController < ApplicationController
       last: 'Marimon',
       what_i_do: 'Software Engineer',
       where: 'Miami, FL',
-      mobile: '+1 (786) 428 - 4315',
+      mobile: '+1 (786) 428 - 8315',
       website: 'sabanero.herokuapp.com',
       email: 'erieljr1@gmail.com'
 
