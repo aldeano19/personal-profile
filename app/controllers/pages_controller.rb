@@ -30,22 +30,21 @@ class PagesController < ApplicationController
     #   { name: 'Agile Methodology', description: "Finding myself frustrated many times over evident ineficiencies on my team, I have set out to prove that the Team's take on the Agile Methodology could use a revision. I've spent researching Agile at least as many hours as it takes someone to learn their first programming language. Agile is a mindset, not a guideline, and that is the first, if not the most important principle that I have assimilated. Here is some of the most influential reading I have come across: " }
     # ]
 
-    # @skills = [
-    #   { name: 'Rails', level: 4 },
-    #   { name: 'Java', level: 8 },
-    #   { name: 'Spring Framework', level: 6 },
-    #   { name: 'Python', level: 8 },
-    #   { name: 'JavaScript', level: 7 },
-    #   { name: 'Git', level: 7 },
-    #   { name: 'Linux', level: 8 },
-    #   { name: 'Docker', level: 7 },
-    #   { name: 'Docker Compose', level: 7 },
-    #   { name: 'RaspberryPi', level: 7 },
-    #   { name: 'Arduino', level: 7 },
-    #   { name: 'Spanish', level: 9 },
-    #   { name: 'English', level: 8 },
-    #   { name: 'Chess (board game)', level: 9 }
-    # ]
+    @skills = [
+      { name: 'Java', level: 8 },
+      { name: 'Rails', level: 6 },
+      { name: 'Spring Framework', level: 6 },
+      { name: 'Python', level: 8 },
+      { name: 'JavaScript', level: 7 },
+      { name: 'Git', level: 8 },
+      { name: 'Linux', level: 8 },
+      { name: 'Docker', level: 7 },
+      { name: 'RaspberryPi', level: 7 },
+      { name: 'Arduino', level: 7 },
+      { name: 'Spanish', level: 9 },
+      { name: 'English', level: 8 },
+      { name: 'Chess (board game)', level: 9 }
+    ]
 
     @experience = [
       {
