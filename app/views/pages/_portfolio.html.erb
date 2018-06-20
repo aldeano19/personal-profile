@@ -11,9 +11,7 @@
           <h2 class="o-section__heading">
             Portfolio
           </h2>
-          <div class="o-content__body  o-section__description">
-            Here it gets interesting.
-          </div>
+
         </div>
       </header><!-- /o-section__header -->
 
@@ -24,24 +22,33 @@
           <% @portfolio.each do |element| %>
 
             <div class="o-grid__col-sm-6">
-              <%= link_to "portfolio/#{element[:full_img]}",
-                          class: "c-image-overlay  t-image-overlay  js-lightbox",
-                          title: element[:title],
-                          'data-lightbox-hidpi'.to_sym => '',
-                          'data-lightbox-gallery'.to_sym => 'portfolio' do %>
-                <%= image_tag  "portfolio/#{element[:thumb_img]}"%>
 
-                <div class="c-image-overlay__content">
-                  <h3>
-                    <%= element[:title] %>
-                  </h3>
-                  <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line"/>
-                  <p>
-                    <%= element[:description] %>
-                  </p>
-                </div>
-
+              <%= link_to element[:demo_link], target: :_blank do %>
+                <%= image_tag  "portfolio/#{element[:thumb_img]}", style: "filter: gray"%>
               <% end %>
+
+
+
+              <h3>
+                <%= element[:title] %>
+              </h3>
+              <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line"/>
+              <p>
+                <%= element[:description] %>
+              </p>
+
+
+              <%= link_to element[:github_link], target: :_blank do %>
+                <i class="fa fa-lg fa-github"></i> &nbsp;
+                Github Repo Link
+              <% end if element.key?(:github_link)%>
+
+              <br>
+              <%= link_to element[:demo_link], target: :_blank do %>
+                <i class="fa fa-lg fa-desktop"></i> &nbsp;
+                Demo Link
+              <% end %>
+
             </div><!-- /o-grid__col -->
 
           <% end %>

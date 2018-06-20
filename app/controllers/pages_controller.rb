@@ -17,35 +17,35 @@ class PagesController < ApplicationController
     @last_name = 'Marimon'
     @what_i_do = 'Software Engineer'
 
-    @personal_intoduction = 'Looking for an Agile, flexible environment capable of mentoring me towards the next step on my career. I enjoy trying out new technologies and having a say on which is best for the job. In return I offer passion, enthusiasm and dedication to bigger picture. I strive for technical excellency on every line of code therefore constructive criticism is of the utmost importance to me.'
+    # @personal_intoduction = ''
 
     @accounts = [
       { link: 'https://stackoverflow.com/users/4379762/eriel-marimon', fa_icon: 'fa-stack-overflow' },
-      { link: 'linkedin.com/in/eriel-marimon-393593bb', fa_icon: 'fa-linkedin' },
+      { link: 'https://linkedin.com/in/eriel-marimon-393593bb', fa_icon: 'fa-linkedin' },
       { link: 'https://github.com/aldeano19', fa_icon: 'fa-github-alt' }
     ]
 
-    @expertise = [
-      { name: 'Test Driven Development', description: "I find TDD not only useful to assert that features work, but also to understand the code that it tests. A properly written test case describes the expected behaviour of the code tested just as well as any pseudocode would, this is why I prefer code reviews to be driven by the unit tests created. This approach is explained with more details by The Code Gang on : <a href='https://hackernoon.com/test-driven-code-review-3f05f6cee400'>this Hacker Noon post</a>." },
-      { name: 'Agile Methodology', description: "Finding myself frustrated many times over evident ineficiencies on my team, I have set out to prove that the Team's take on the Agile Methodology could use a revision. I've spent researching Agile at least as many hours as it takes someone to learn their first programming language. Agile is a mindset, not a guideline, and that is the first, if not the most important principle that I have assimilated. Here is some of the most influential reading I have come across: " }
-    ]
+    # @expertise = [
+    #   { name: 'Test Driven Development', description: "I find TDD not only useful to assert that features work, but also to understand the code that it tests. A properly written test case describes the expected behaviour of the code tested just as well as any pseudocode would, this is why I prefer code reviews to be driven by the unit tests created. This approach is explained with more details by The Code Gang on : <a href='https://hackernoon.com/test-driven-code-review-3f05f6cee400'>this Hacker Noon post</a>." },
+    #   { name: 'Agile Methodology', description: "Finding myself frustrated many times over evident ineficiencies on my team, I have set out to prove that the Team's take on the Agile Methodology could use a revision. I've spent researching Agile at least as many hours as it takes someone to learn their first programming language. Agile is a mindset, not a guideline, and that is the first, if not the most important principle that I have assimilated. Here is some of the most influential reading I have come across: " }
+    # ]
 
-    @skills = [
-      { name: 'Rails', level: 4 },
-      { name: 'Java', level: 8 },
-      { name: 'Spring Framework', level: 6 },
-      { name: 'Python', level: 8 },
-      { name: 'JavaScript', level: 7 },
-      { name: 'Git', level: 7 },
-      { name: 'Linux', level: 8 },
-      { name: 'Docker', level: 7 },
-      { name: 'Docker Compose', level: 7 },
-      { name: 'RaspberryPi', level: 7 },
-      { name: 'Arduino', level: 7 },
-      { name: 'Spanish', level: 9 },
-      { name: 'English', level: 8 },
-      { name: 'Chess (board game)', level: 9 }
-    ]
+    # @skills = [
+    #   { name: 'Rails', level: 4 },
+    #   { name: 'Java', level: 8 },
+    #   { name: 'Spring Framework', level: 6 },
+    #   { name: 'Python', level: 8 },
+    #   { name: 'JavaScript', level: 7 },
+    #   { name: 'Git', level: 7 },
+    #   { name: 'Linux', level: 8 },
+    #   { name: 'Docker', level: 7 },
+    #   { name: 'Docker Compose', level: 7 },
+    #   { name: 'RaspberryPi', level: 7 },
+    #   { name: 'Arduino', level: 7 },
+    #   { name: 'Spanish', level: 9 },
+    #   { name: 'English', level: 8 },
+    #   { name: 'Chess (board game)', level: 9 }
+    # ]
 
     @experience = [
       {
@@ -72,8 +72,8 @@ class PagesController < ApplicationController
         end_date: 'Apr 2018',
         position: 'RESTful API Engineer',
         where: 'Fort Lauderdale, Fl',
-        description: 'As Back End engineer designing and implementing RESTful services using Microservices as well as Monolithic architectures. As DevOps, building continuous integration setups (with Jenkins and Nexus) as well as Docker development-ready environments.',
-        tech: ['Scala', 'Java', 'MySQL', 'Google Closure Templates', 'Javascript', 'Docker'],
+        description: '60% Backend. 20% Devops. 20% Android. As Back End engineer designing and implementing RESTful services using Microservices architectures. As DevOps, building continuous integration setups (with Jenkins and Nexus) as well as Docker development-ready environments. Supported Android Applications development.',
+        tech: ['Java', 'Spring', 'MySQL', 'Docker', 'Android'],
         links:[]
       }, {
           organization: 'Test Case Central',
@@ -97,9 +97,9 @@ class PagesController < ApplicationController
         organization: 'Google',
         start_date: 'Jul 2014',
         end_date: 'Aug 2014',
-        position: 'Python Developer / Co-Founder',
-        where: 'Pompano Beach, FL',
-        tech: ['Python', 'Javascript', 'HTML/CSS', 'AppEngine'],
+        position: 'Intern',
+        where: 'Mountain View, CA',
+        tech: ['Python', 'Javascript', 'HTML/CSS', 'AppEngine', 'Android'],
         links:[],
         description: "Created Web Crawler applications on python as well as the full stack for a web app that implements the Google Maps API to help navigate the Google's Mountain View Campus."
     }
@@ -129,57 +129,36 @@ class PagesController < ApplicationController
         icon: 'fa-stack-exchange' }
     ]
 
-    @awards = [
-      { name: 'First Prize at Fort Lauderdale Civic Hackathon July 2016',
-        description: 'Liber-P, a project for online/offline support programs for inmate education and recidivism reduction.',
-        link: 'https://medium.com/@CodeforFTL/event-recap-fort-lauderdale-civic-hackathon-a652a2aa44'}
-    ]
+    # @awards = [
+    #   { name: 'First Prize at Fort Lauderdale Civic Hackathon July 2016',
+    #     description: 'Liber-P, a project for online/offline support programs for inmate education and recidivism reduction.',
+    #     link: 'https://medium.com/@CodeforFTL/event-recap-fort-lauderdale-civic-hackathon-a652a2aa44'}
+    # ]
 
     @portfolio = [
       {
-        title: 'Musée du Louvre',
-        full_img: '1_full.jpg',
-        thumb_img: '1_thumb.jpg',
-        description: 'Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-        demo_link: 'http://example.com'
+        title: 'Tumblr App',
+        full_img: 'tumblr_full.jpg',
+        thumb_img: 'tumblr_full.png',
+        description: 'A Tumblr replica app with Users, Posts, and About page. Built with Ruby on Rails.',
+        demo_link: 'https://cryptic-stream-91714.herokuapp.com/about',
+        github_link: 'https://github.com/aldeano19/Tumblr-App'
       },
       {
-        title: 'Tunnel Effect',
-        full_img: '2_full.jpg',
-        thumb_img: '2_thumb.jpg',
-        description: 'Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-        demo_link: 'http://example.com'
-      },
-
-      {
-        title: 'New York, New York',
-        full_img: '3_full.jpg',
-        thumb_img: '3_thumb.jpg',
-        description: 'Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-        demo_link: 'http://example.com'
+        title: 'File Cabinet',
+        full_img: 'file_cabinet_full.png',
+        thumb_img: 'file_cabinet_full.png',
+        description: 'An app that allows to Create and Modify files. Similar to Evernote. Built on Rails.',
+        demo_link: 'https://radiant-springs-75852.herokuapp.com/',
+        github_link: 'https://github.com/aldeano19/file-cabinet'
       },
       {
-        title: 'Sky High',
-        full_img: '4_full.jpg',
-        thumb_img: '4_thumb.jpg',
-        description: 'Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-        demo_link: 'http://example.com'
-      },
-      {
-        title: 'The Eiffel Tower',
-        full_img: '5_full.jpg',
-        thumb_img: '5_thumb.jpg',
-        description: 'Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-        demo_link: 'http://example.com'
-      },
-      {
-        title: 'Reaching the Clouds',
-        full_img: '6_full.jpg',
-        thumb_img: '6_thumb.jpg',
-        description: 'Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-        demo_link: 'http://example.com'
+          title: 'Test Case Central',
+          full_img: 'testcasecentral_full.png',
+          thumb_img: 'testcasecentral_full.png',
+          description: 'Test Automation Framework. This was a startup that I co-founded. It focuses on tools to facilitate Web App and Rest Api testing. Some tools include Rest API automated test creation, Dependency testing, Web app spell check.',
+          demo_link: 'http://testcasecentral.com/portal'
       }
-
     ]
 
     @clients = [

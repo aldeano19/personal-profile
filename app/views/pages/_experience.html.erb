@@ -11,9 +11,7 @@
           <h2 class="o-section__heading">
             Experience
           </h2>
-          <div class="o-content__body  o-section__description">
-            Yes. I&#39;ve been around.
-          </div>
+
         </div>
       </header><!-- /o-section__header -->
 
@@ -40,11 +38,23 @@
                       <%= element[:where] %>
                     </div>
                   </div>
-                  <div class="o-grid__col-md-7">
+
+
+                  <div class="o-grid__col-md-5">
                     <p>
                       <%= element[:description] %>
                     </p>
                   </div>
+
+                  <div class="o-grid__col-md-2">
+                    <ul>
+                      <% element[:tech].each do |t| %>
+                        <li><%= t %></li>
+                      <% end %>
+                    </ul>
+                  </div>
+
+
                 </div><!-- /o-grid -->
               </div><!-- /o-content -->
             </div><!-- /c-timeline__item -->
