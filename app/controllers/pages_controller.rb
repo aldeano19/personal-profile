@@ -8,7 +8,7 @@ class PagesController < ApplicationController
       what_i_do: 'Software Engineer',
       where: 'Miami, FL',
       mobile: '+1 (786) 428 - 4315',
-      website: 'https://sabanero.herokuapp.com/',
+      website: 'sabanero.herokuapp.com',
       email: 'erieljr1@gmail.com'
 
     }
