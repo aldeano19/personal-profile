@@ -24,13 +24,13 @@
             <div class="o-grid__col-sm-6">
 
               <%= link_to element[:demo_link], target: :_blank do %>
+
                 <%= image_tag  "portfolio/#{element[:thumb_img]}", style: "filter: gray"%>
               <% end %>
 
-
-
               <h3>
-                <%= element[:title] %>
+                <%= element[:title] %> &nbsp;
+                <i class="fa <%= element[:fa_framework_icon_class] %>"></i>
               </h3>
               <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line"/>
               <p>

@@ -7,8 +7,8 @@ class PagesController < ApplicationController
       last: 'Marimon',
       what_i_do: 'Software Engineer',
       where: 'Miami, FL',
-      mobile: '(786) 428 - 4315',
-      website: 'erieljr1.com',
+      mobile: '+1 (786) 428 - 4315',
+      website: 'https://sabanero.herokuapp.com/',
       email: 'erieljr1@gmail.com'
 
     }
@@ -142,7 +142,8 @@ class PagesController < ApplicationController
         thumb_img: 'tumblr_full.png',
         description: 'A Tumblr replica app with Users, Posts, and About page. Built with Ruby on Rails.',
         demo_link: 'https://cryptic-stream-91714.herokuapp.com/about',
-        github_link: 'https://github.com/aldeano19/Tumblr-App'
+        github_link: 'https://github.com/aldeano19/Tumblr-App',
+        fa_framework_icon_class: 'fa-diamond'
       },
       {
         title: 'File Cabinet',
@@ -150,14 +151,16 @@ class PagesController < ApplicationController
         thumb_img: 'file_cabinet_full.png',
         description: 'An app that allows to Create and Modify files. Similar to Evernote. Built on Rails.',
         demo_link: 'https://radiant-springs-75852.herokuapp.com/',
-        github_link: 'https://github.com/aldeano19/file-cabinet'
+        github_link: 'https://github.com/aldeano19/file-cabinet',
+        fa_framework_icon_class: 'fa-diamond'
       },
       {
           title: 'Test Case Central',
           full_img: 'testcasecentral_full.png',
           thumb_img: 'testcasecentral_full.png',
           description: 'Test Automation Framework. This was a startup that I co-founded. It focuses on tools to facilitate Web App and Rest Api testing. Some tools include Rest API automated test creation, Dependency testing, Web app spell check.',
-          demo_link: 'http://testcasecentral.com/portal'
+          demo_link: 'http://testcasecentral.com/portal',
+          fa_framework_icon_class: 'fa-diamond'
       }
     ]
 
